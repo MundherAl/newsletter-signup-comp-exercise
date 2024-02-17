@@ -1,9 +1,13 @@
-import './App.css';
-import Main from './sections/Main';
+import './index.css';
+import Page from './layouts/Page';
+import NewsletterForm from './components/NewsletterForm';
 
 function App() {
   return (
-    <Main />
+    <Page>
+      <NewsletterForm />
+      s
+    </Page>
   );
 }
 
