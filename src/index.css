@@ -20,8 +20,9 @@ code {
 }
 
 .newsletter-list li {
+  @apply mt-6;
+  @apply md:mt-3;
   background: url('assets/icon-list.svg') no-repeat left center;
   padding: 0px 0px 0px 30px;
   height: 30px;
-  line-height: 30px;
 }
