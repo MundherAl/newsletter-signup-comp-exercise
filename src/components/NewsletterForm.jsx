@@ -17,7 +17,7 @@ export default function NewsletterForm() {
     }
 
     return (
-        <div className="bg-white md:w-[60em] md:h-[40em] w-full h-auto md:rounded-3xl shadow-2xl">
+        <div className="bg-white md:w-[60em] md:h-[40em] w-full h-full md:rounded-3xl shadow-2xl">
             <div className="flex md:flex-row md:grid-cols-2 flex-col-reverse grid-cols-1 md:p-6 justify-between w-full h-full">
                 <div className='my-20 mx-6'>
                     <h2 className="md:text-6xl text-4xl font-bold font-roboto text-dark-slate-gray">Stay updated!</h2>
@@ -52,7 +52,7 @@ export default function NewsletterForm() {
                         </form>
                     </div>
                 </div>
-                <img src={imgDesktop} alt="" className='object-cover h-[16em] md:w-full md:h-full rounded-3xl' />
+                <img src={imgDesktop} alt="" className='object-cover h-[16em] md:w-full md:h-full rounded-b-3xl md:rounded-3xl' />
             </div>
         </div>
     );
