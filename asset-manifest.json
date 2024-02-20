@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/newsletter-signup-comp-exercise/static/css/main.bec7b7d1.css",
+    "main.js": "/newsletter-signup-comp-exercise/static/js/main.b05eba3d.js",
+    "static/media/illustration-sign-up-desktop.svg": "/newsletter-signup-comp-exercise/static/media/illustration-sign-up-desktop.ce2024babf0bc98a8862252535b544c9.svg",
+    "index.html": "/newsletter-signup-comp-exercise/index.html",
+    "static/media/icon-success.svg": "/newsletter-signup-comp-exercise/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
+    "static/media/icon-list.svg": "/newsletter-signup-comp-exercise/static/media/icon-list.5e317c030bb9f11a3343.svg",
+    "main.bec7b7d1.css.map": "/newsletter-signup-comp-exercise/static/css/main.bec7b7d1.css.map",
+    "main.b05eba3d.js.map": "/newsletter-signup-comp-exercise/static/js/main.b05eba3d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bec7b7d1.css",
+    "static/js/main.b05eba3d.js"
+  ]
+}
