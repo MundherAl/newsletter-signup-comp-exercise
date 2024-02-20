@@ -17,6 +17,7 @@ export default function EmailField(props) {
                         invalid:[&:not(:focus)]:bg-red-100
                         `)}
                 onBlur={props.onBlur}
+                onChange={props.onChange}
                 required />
         </div>
     )

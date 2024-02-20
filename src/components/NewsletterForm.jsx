@@ -2,20 +2,30 @@ import imgDesktop from '../assets/illustration-sign-up-desktop.svg';
 import SubmitButton from './form-elements/SubmitButton';
 import EmailField from './form-elements/EmailField';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function NewsletterForm() {
 
     const [emailValidity, setEmailValidity] = useState(true);
+    const [email, setEmail] = useState('');
+    const navigate = useNavigate();
 
-    const handleInputChange = (e) => {
+    const handleBlur = (e) => {
         if (e.target.validity.valid) {
             setEmailValidity(true);
-            console.log(emailValidity);
         } else {
             setEmailValidity(false);
-            console.log(emailValidity);
         }
+    }
+
+    const handleChange = (e) => {
+        setEmail(e.target.value);
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate('/subscribed', { state: { email: email } });
     }
 
     return (
@@ -32,8 +42,8 @@ export default function NewsletterForm() {
                         <li>And much more!</li>
                     </ul>
                     <div className='mt-8'>
-                        <form action="">
-                            <EmailField onBlur={handleInputChange} emailValidity={emailValidity} />
+                        <form onSubmit={handleSubmit}>
+                            <EmailField onBlur={handleBlur} onChange={handleChange} emailValidity={emailValidity} />
                             <SubmitButton text='Subscribe to monthly newsletter' />
                         </form>
                     </div>
