@@ -6,7 +6,7 @@ import Subscribed from './pages/Subscribed'
 function App() {
   return (
     <Routes>
-      <Route index path='/' element={<Newsletter />} />
+      <Route index path='/newsletter-signup-comp-exercise' element={<Newsletter />} />
       <Route path='/subscribed' element={<Subscribed />} />
     </Routes>
   );
