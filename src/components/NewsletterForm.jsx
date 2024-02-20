@@ -46,9 +46,9 @@ export default function NewsletterForm() {
                                 onBlur={handleInputChange}
                                 required />
                             <input type="submit" value="Subscribe to monthly newsletter"
-                                className='md:w-[25em] w-full h-12 rounded-md bg-dark-slate-gray text-white cursor-pointer font-bold transition-colors
-                                hover:bg-gradient-to-r hover:from-tomato-bright hover:to-tomato
-                                focus:bg-gradient-to-r focus:from-tomato-bright focus:to-tomato' />
+                                className='md:w-[25em] w-full h-12 rounded-md bg-dark-slate-gray text-white cursor-pointer font-bold
+                                hover:bg-gradient-to-r hover:from-tomato-bright hover:to-tomato hover:shadow-xl hover:shadow-tomato/40
+                                focus:bg-gradient-to-r focus:from-tomato-bright focus:to-tomato focus:shadow-xl focus:shadow-tomato/40' />
                         </form>
                     </div>
                 </div>
