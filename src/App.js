@@ -1,12 +1,14 @@
 import './index.css';
-import Page from './layouts/Page';
-import NewsletterForm from './components/NewsletterForm';
+import { Routes, Route } from 'react-router-dom';
+import Newsletter from './pages/Newsletter'
+import Subscribed from './pages/Subscribed'
 
 function App() {
   return (
-    <Page>
-      <NewsletterForm />
-    </Page>
+    <Routes>
+      <Route index path='/' element={<Newsletter />} />
+      <Route path='/subscribed' element={<Subscribed />} />
+    </Routes>
   );
 }
 
