@@ -4,8 +4,8 @@ import SubmitButton from './form-elements/SubmitButton';
 export default function Subscribed(props) {
     return (
         <div className="bg-white flex flex-col 
-        h-full w-full p-8 rounded-3xl
-        md:h-[30em] md:w-[30em] md:pt-12 md:px-12 md:pb-14
+        h-full w-full p-8 
+        md:h-[30em] md:w-[30em] md:pt-12 md:px-12 md:pb-14 md:rounded-3xl
         justify-between">
             <div>
                 <img src={iconSuccess} alt="Success icon" className='mt-36 md:mt-0 w-20 object-contain' />
