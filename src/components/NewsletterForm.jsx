@@ -1,11 +1,12 @@
 import imgDesktop from '../assets/illustration-sign-up-desktop.svg';
 import SubmitButton from './form-elements/SubmitButton';
+import EmailField from './form-elements/EmailField';
 import React, { useState } from 'react';
 
 
 export default function NewsletterForm() {
 
-    const [emailValidity, setEmailValidity] = useState(false);
+    const [emailValidity, setEmailValidity] = useState(true);
 
     const handleInputChange = (e) => {
         if (e.target.validity.valid) {
@@ -32,20 +33,7 @@ export default function NewsletterForm() {
                     </ul>
                     <div className='mt-8'>
                         <form action="">
-                            <div className='flex w-full md:w-[25em] justify-between'>
-                                <p className='font-bold font-roboto text-sm text-dark-slate-gray mb-2'>Email address</p>
-                                <p className={"font-bold font-roboto text-sm text-red-400 mb-2" + (emailValidity ? " hidden" : "")}>
-                                    Valid email required
-                                </p>
-                            </div>
-                            <input type="email" placeholder='email@company.com' id='emailInput'
-                                className='peer border-2 border-slate-300 w-full md:w-[25em] h-12 rounded-md pl-4 mb-4
-                                focus:border-black hover:border-black
-                                invalid:[&:not(:focus)]:border-red-300  
-                                invalid:[&:not(:focus)]:text-red-400 
-                                invalid:[&:not(:focus)]:bg-red-100'
-                                onBlur={handleInputChange}
-                                required />
+                            <EmailField onBlur={handleInputChange} emailValidity={emailValidity} />
                             <SubmitButton text='Subscribe to monthly newsletter' />
                         </form>
                     </div>
